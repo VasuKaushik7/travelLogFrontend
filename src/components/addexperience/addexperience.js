@@ -38,7 +38,7 @@ export default function AddExperience() {
               headers: { 'Content-Type': 'application/json' },
               body: JSON.stringify({ title:title, description:description })
           };
-          fetch('/logs', requestOptions)
+          fetch('https://travel-log-backend.onrender.com/logs', requestOptions)
               .then(response => response.json())
               .then(data => {
                 console.log("data---->",data);

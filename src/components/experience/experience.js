@@ -24,7 +24,7 @@ export default function Experience(props) {
             
             const fetchLikes = async () => {
                 try {
-                  const response = await fetch("/likes/"+props.data._id);
+                  const response = await fetch("https://travel-log-backend.onrender.com/likes/"+props.data._id);
                   const log1= await response.json();
                     console.log("response---->",log1);
                     setLikes(log1.likes);
@@ -52,7 +52,7 @@ export default function Experience(props) {
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ id: props.data._id, action: actionName })
             };
-            fetch('/likes', requestOptions)
+            fetch('https://travel-log-backend.onrender.com/likes', requestOptions)
                 .then(response => response.json())
                 .then(data => {
                     setLikes(null);

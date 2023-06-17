@@ -14,7 +14,7 @@ export default function Dashoard() {
 
   const fetchLogs = async () => {
     try {
-      const response = await fetch("/logs");
+      const response = await fetch("https://travel-log-backend.onrender.com/logs");
       const log1= await response.json();
       if(logs.length==0){
         console.log("inside If")
