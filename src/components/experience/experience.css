@@ -1,0 +1,12 @@
+.experience{
+    border: 1px solid;
+    border-radius: 6px;
+    max-width: 806px;
+    margin-bottom: 17px;
+}
+.reactions{
+    display: flex;
+    justify-content: flex-end;
+    padding: 12px;
+    cursor: pointer;
+}

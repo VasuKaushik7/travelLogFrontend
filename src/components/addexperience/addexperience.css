@@ -1,0 +1,15 @@
+.css-1633um2-MuiPaper-root{
+    padding: 0;
+}
+.shareButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 226px;
+
+}
+.text{
+    width: 100%;
+    height: 100%;
+    resize:none;
+}
