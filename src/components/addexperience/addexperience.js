@@ -42,13 +42,14 @@ export default function AddExperience() {
               .then(response => response.json())
               .then(data => {
                 console.log("data---->",data);
+                navigate('/')
       });
       } catch (error) {
           console.log(error);
       }
   };
   addLog();
-    navigate('/')
+    
   }
   return (
     <>
